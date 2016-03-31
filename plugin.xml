@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="me.rahul.plugins.playfrequency" version="0.0.1"
+        xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+  <name>Cordova Plugin PlayFrequency</name>
+  <description>Play Audio Frequency iOS/Android Plugin</description>
+  <author>Rahul Pandey</author>
+
+  <engines>
+    <engine name="cordova" version=">=3.0.0" />
+  </engines>
+
+  <js-module name="PlayFrequency" src="www/PlayFrequency.js">
+    <clobbers target="window.plugins.frequency"/>
+  </js-module>
+
+  <platform name="android">
+    <config-file parent="/*" target="res/xml/config.xml">
+      <feature name="PlayFrequency">
+        <param name="android-package" value="me.rahul.plugins.playfrequency.PlayFrequency"/>
+      </feature>
+    </config-file>
+    <config-file parent="/*" target="AndroidManifest.xml"/>
+    <source-file src="src/android/PlayFrequency.java" target-dir="src/me/rahul/plugins/playfrequency/PlayFrequency"/>
+  </platform>
+  <platform name="ios">
+    <config-file parent="/*" target="config.xml">
+      <feature name="CDVPlayFrequency">
+        <param name="ios-package" value="CDVPlayFrequency"/>
+      </feature>
+    </config-file>
+    <source-file src="src/ios/CDVPlayFrequency.m"/>
+    <source-file src="src/ios/CDVPlayFrequency.h"/>
+    <source-file src="src/ios/TGSineWaveToneGenerator.h"/>
+    <source-file src="src/ios/TGSineWaveToneGenerator.m"/>
+    <framework src="AudioToolbox.framework" weak="true" />
+  </platform>
+</plugin>
