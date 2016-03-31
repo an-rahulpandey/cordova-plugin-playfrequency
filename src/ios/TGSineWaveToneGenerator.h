@@ -18,8 +18,8 @@
 //
 
 #import <Foundation/Foundation.h>
-@import AudioToolbox;
-@import AVFoundation;
+#import <AudioToolbox/AudioToolbox.h>
+#import <AVFoundation/AVFoundation.h>
 
 
 #define SINE_WAVE_TONE_GENERATOR_FREQUENCY_DEFAULT 440.0f
