@@ -154,6 +154,8 @@ OSStatus RenderTone(
     AVAudioSession *audioSession = [AVAudioSession sharedInstance];
     BOOL ok;
     NSError *setCategoryError = nil;
+    [audioSession setPreferredSampleRate:_sampleRate error:nil];
+    [audioSession overrideOutputAudioPort:AVAudioSessionPortOverrideSpeaker error:nil];
     ok = [audioSession setCategory:AVAudioSessionCategoryPlayback error:&setCategoryError];
     NSAssert1(ok, @"Audio error %@", setCategoryError);
     [[NSNotificationCenter defaultCenter] addObserver:self
