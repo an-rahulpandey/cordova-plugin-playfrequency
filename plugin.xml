@@ -16,12 +16,11 @@
 
   <platform name="android">
     <config-file parent="/*" target="res/xml/config.xml">
-      <feature name="PlayFrequency">
-        <param name="android-package" value="me.rahul.plugins.playfrequency.PlayFrequency"/>
+      <feature name="CDVPlayFrequency">
+        <param name="android-package" value="me.rahul.plugins.playfrequency.CDVPlayFrequency"/>
       </feature>
     </config-file>
-    <config-file parent="/*" target="AndroidManifest.xml"/>
-    <source-file src="src/android/PlayFrequency.java" target-dir="src/me/rahul/plugins/playfrequency/PlayFrequency"/>
+    <source-file src="src/android/CDVPlayFrequency.java" target-dir="src/me/rahul/plugins/playfrequency"/>
   </platform>
   <platform name="ios">
     <config-file parent="/*" target="config.xml">

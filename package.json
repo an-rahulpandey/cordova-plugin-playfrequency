@@ -1,0 +1,36 @@
+{
+  "name": "cordova-plugin-playfrequency",
+  "version": "0.0.1",
+  "description": "Play Audio Frequency iOS/Android Plugin",
+  "cordova": {
+    "id": "me.rahul.plugins.playfrequency",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/an-rahulpandey/cordova-plugin-playfrequency.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "play frequency",
+    "cordova play tone",
+    "cordova play frequency",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Rahul Pandey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/an-rahulpandey/cordova-plugin-playfrequency/issues"
+  },
+  "homepage": "https://github.com/an-rahulpandey/cordova-plugin-playfrequency#readme"
+}
