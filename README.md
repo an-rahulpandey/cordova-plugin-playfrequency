@@ -12,11 +12,17 @@ iOS Version is based on https://github.com/picciano/iOS-Tone-Generator
 
 #####Playing Audio
 
-````var frequency = 16000; //frequency to play in Hz
+````
+    var frequency = 16000; //frequency to play in Hz
+
     var sampleRate = 44100; //sample rate
-    window.plugins.frequency.play(frequency, sampleRate);````
+    
+    window.plugins.frequency.play(frequency, sampleRate);
+````
 
 
 #####Stopping Audio
 
-````window.plugins.frequency.stop();````
+````
+    window.plugins.frequency.stop();
+````
