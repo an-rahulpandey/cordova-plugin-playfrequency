@@ -1,9 +1,9 @@
 {
   "name": "cordova-plugin-playfrequency",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Play Audio Frequency iOS/Android Plugin",
   "cordova": {
-    "id": "me.rahul.plugins.playfrequency",
+    "id": "cordova-plugin-playfrequency",
     "platforms": [
       "android",
       "ios"
